@@ -14,7 +14,7 @@
 <body>
 	
    <!-- Ganti Audio di sini -->
-   <audio src="audio.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="audio.mp3" id="linkmp3" class="sembunyi" controls loop></audio>
    
    <div id="bodyblur">
      <!-- Wallpaper --><img src="https://e0.pxfuel.com/wallpapers/87/478/desktop-wallpaper-iphone-tree-pink-spring-pink-autumn.jpg" id="wallpaper"/><div id="beneranblur"></div>
@@ -40,6 +40,18 @@
          <img src="https://feeldreams.github.io/ciumin.gif" id="fotostiker7"/>
          <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker8"/>
      </div>
+	 <script>
+        // Using JavaScript to play audio on a button click
+        var audio = document.getElementById("myAudio");
+        var button = document.getElementById("tombol");
+
+        button.addEventListener("click", function() {
+            audio.play();
+        });
+
+        // Ensure audio loops
+        audio.loop = true;
+    </script>
      
      <div><blockquote id='bq' data-text='&#9829;'>
 
